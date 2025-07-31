@@ -1,0 +1,46 @@
+{
+  "name": "react-state",
+  "version": "1.0.0",
+  "description": "A lightweight React state management library for React 19",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "start": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0-canary-4a36d3ea-20250416",
+    "react-dom": "^19.2.0-canary-4a36d3ea-20250416"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "keywords": [
+    "react",
+    "react19",
+    "state",
+    "management",
+    "store",
+    "hook"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  }
+}
